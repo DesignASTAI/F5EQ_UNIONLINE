@@ -1,0 +1,15 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre logo y texto */
+}
+
+.logo {
+    height: 50px; /* Ajusta según tu diseño */
+    width: auto;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
