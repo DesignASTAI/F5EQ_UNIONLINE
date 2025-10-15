@@ -1,0 +1,26 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+nav {
+  background-color: #f1c884; /* color de fondo */
+  color: rgb(128, 107, 62);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+h1{
+    background-color: #f1c884;
+    color: rgb(176, 143, 103);
+    display: flex;
+    justify-content: center;
+}
+h2{
+    color: rgb(176, 143, 103);
+    display: flex;
+    justify-content: center;
+    
+}
