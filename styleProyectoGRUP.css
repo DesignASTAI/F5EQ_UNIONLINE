@@ -137,24 +137,30 @@ button:hover {
 
 /*--------------------------------------------------------------------------------------------------*/
 /*ESTILO PÁGINA NUESTRA FACULTAD*/
-.nuestra-facultad {
+.class-facultad {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.class-facultad p, h3{ /* Párrafos y subtítulos */
+  text-align: center;
+  background-color: white;
+  padding: 10px
+}
+
+.titulo-principal { /* Título principal */  
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.nuestra-facultad { /* Contenedor principal */
   max-width: 800px;
   margin: 40px auto;
-  padding: 20px;
-  background-color: #e0bf81;
+  padding: 0px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(110, 82, 61, 0.1);
 }
 
-.nuestra-facultad h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nuestra-facultad p {
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
 
 /* --- Estilos para imágenes de facultad --- */
 .imagen-facultad {
@@ -169,18 +175,25 @@ button:hover {
   transition: transform 0.3s ease; /* Animación suave */
 }
 
+
+
+
 /* Efecto hover para las imágenes */
 .imagen-facultad:hover {
   transform: scale(1.05); /* Aumenta ligeramente al pasar el mouse */
+  rotate: 350deg;
 }
 
 /* Estilos específicos para las columnas */
-.columna-izquierda .imagen-facultad,
-.columna-derecha .imagen-facultad {
+.columna-izda .imagen-facultad,
+.columna-medio .imagen-facultad,
+.columna-dcha .imagen-facultad {
   width: 100%;
-  max-width: 300px;
+  min-width: 300px;
   height: 200px;
-}
+  flex: 1; /* mismo tamaño de las columnas */
+  object-fit: cover; /* mantiene proporción de la imagen */
+}   
 
 /* Versiones de diferentes tamaños */
 .imagen-pequeña {
@@ -213,13 +226,13 @@ button:hover {
 }
 
 /* =====================================================
-   CSS GRID PARA 2 COLUMNAS Y 1 FILA
+   CSS GRID PARA 3 COLUMNAS Y 1 FILA
    ===================================================== */
 
 /* Título principal */
 .titulo-principal {
   text-align: center;
-  margin-bottom: 30px;
+  padding: 2em 0 0 0;
 }
 
 .titulo-principal h1 {
@@ -229,59 +242,84 @@ button:hover {
 }
 
 /* --- CSS Grid para 2 columnas y 1 fila --- */
-.contenido-dos-columnas {
+.contenido-3-columnas {
   display: grid;
-  grid-template-columns: 1fr 1fr;  /* 2 columnas de igual tamaño */
+  grid-template-columns: 1fr 1fr 1fr;  /* 2 columnas de igual tamaño */
   grid-template-rows: 1fr;         /* 1 fila */
   gap: 30px;                       /* Espacio entre columnas */
   align-items: start;              /* Alinea contenido al inicio */
   margin-bottom: 40px;
   padding: 20px;
+  /*border: 2px solid #967b3e;*/
+}
+
+.contenido-3-columnas img {
+  border-radius: 50em;
+  max-height:25em;
 }
 
 /* Columnas individuales */
-.columna-izquierda,
-.columna-derecha {
+.columna-izda, .columna-medio, .columna-dcha {
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgb(255, 255, 255);
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(83, 45, 45, 0.9);
+  display: flex;  
+  flex-direction: column;
+    flex: 1; /* mismo tamaño de las columnas del contenedor */
+    max-height: auto; /* altura máxima uniforme */
+    overflow: hidden; /* oculta el desbordamiento */
+    min-height:45em;
 }
 
 /* === VARIANTES DE GRID CON DIFERENTES PROPORCIONES === */
-.grid-60-40 {
-  grid-template-columns: 60% 40%;  /* Columna izquierda más ancha */
+.grid-50-50 {
+  grid-template-columns: 50% 50%;  /* Columnas de igual ancho */
 }
 
-.grid-40-60 {
-  grid-template-columns: 40% 60%;  /* Columna derecha más ancha */
+.grid-tercio-tercio-tercio {
+  grid-template-columns: 1fr 1fr 1fr;  /* Tres columnas de igual ancho */
 }
 
-.grid-tercio-dos-tercios {
-  grid-template-columns: 1fr 2fr;  /* Primera columna 1/3, segunda 2/3 */
+
+.class-facultad {
+  background-color: antiquewhite;
+  padding: 0px;
 }
 
-.grid-dos-tercios-tercio {
-  grid-template-columns: 2fr 1fr;  /* Primera columna 2/3, segunda 1/3 */
+.contenido-2-columnas {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;  /* 2 columnas de igual tamaño */
+  grid-template-rows: 1fr;         /* 1 fila */
+  gap: 30px;                       /* Espacio entre columnas */
+  align-items: start;              /* Alinea contenido al inicio */
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color:#967b3e;
 }
 
-/* === RESPONSIVE PARA PANTALLAS PEQUEÑAS === */
-@media (max-width: 768px) {
-  .contenido-dos-columnas {
-    grid-template-columns: 1fr;     /* Una sola columna en móviles */
-    grid-template-rows: auto auto;  /* Dos filas automáticas */
-    gap: 20px;
-  }
+.columna-A {
+  padding: 20px;
+  background-color: none;
 }
 
-@media (max-width: 480px) {
-  .contenido-dos-columnas {
-    padding: 10px;
-    gap: 15px;
-  }
-  
-  .columna-izquierda,
-  .columna-derecha {
-    padding: 15px;
-  }
+.columna-A iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  background-color: #967b3e;
+
 }
+
+.columna-B {
+  padding: 8em 0 2em 2em;
+}
+
+.columna-B h2{
+  background-color: #967b3e;
+}
+
+.columna-B ul>li {
+  padding: 0.8em 0
+}
+
