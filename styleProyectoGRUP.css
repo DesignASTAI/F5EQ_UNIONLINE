@@ -308,9 +308,14 @@ button:hover {
   height: 350px;
   border-radius: 12px;
   background-color: #967b3e;
-
+  /* Imagen de respaldo si el iframe no carga */
+  background-image: url('Images/Scena2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/
 .columna-B {
   padding: 8em 0 2em 2em;
 }

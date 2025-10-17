@@ -75,7 +75,28 @@
             <div class="contenido-2-columnas">
                 <!-- Columna 1 -->
                 <div class="columna-A">
-                       <iframe src="https://www.google.com/maps/embed?pb=!4v1760704065699!6m8!1m7!1sVzqpFLQMr_VVp2tWS2c-AQ!2m2!1d43.39321837476216!2d-5.663165757192925!3f284.40092798836963!4f0.4140533923964398!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <!-- Contenedor con imagen de respaldo -->
+                    <div class="iframe-container">
+                        <!-- Imagen de respaldo que se muestra si el iframe falla -->
+                        <img src="Images/mapa-respaldo.jpg" alt="Mapa de ubicación de la Universidad" class="iframe-fallback">
+                        
+                        <!-- Iframe del mapa -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!4v1760704065699!6m8!1m7!1sVzqpFLQMr_VVp2tWS2c-AQ!2m2!1d43.39321837476216!2d-5.663165757192925!3f284.40092798836963!4f0.4140533923964398!5f0.7820865974627469" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Ubicación de la Universidad">
+                        </iframe>
+                        
+                        <!-- Mensaje de error opcional -->
+                        <div class="iframe-error-message">
+                            📍 Mapa no disponible temporalmente
+                        </div>
+                    </div>
                 </div>
                 <!-- Columna 2 -->
                 <div class="columna-B">
