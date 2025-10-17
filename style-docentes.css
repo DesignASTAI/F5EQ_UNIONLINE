@@ -1,0 +1,116 @@
+/* ======== REGLAS GENERALES ======== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* ======== TÍTULO ======== */
+h1 {
+  text-align: center;
+  color: #003366;
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ======== CONTENEDOR DE DOCENTES ======== */
+.contenedor-docentes {
+  display: flex;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ======== TARJETAS ======== */
+.docente {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.docente:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ======== IMAGEN ======== */
+.foto-docente {
+  width: 100%;
+  height: 50px; /* 👈 Más pequeñas */
+  object-fit: cover;
+  border-bottom: 3px solid #003366;
+}
+
+/* ======== TEXTO ======== */
+figcaption {
+  padding: 15px 20px;
+  text-align: left;
+}
+
+figcaption h2 {
+  color: #003366;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+figcaption p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+figcaption p strong {
+  color: #222;
+}
+
+/* ======== BOTÓN VOLVER ======== */
+.boton-volver {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.boton-volver button {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver button:hover {
+  background-color: #00509e;
+}
+
+/* ======== PIE DE PÁGINA ======== */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  color: #555;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 768px) {
+  .foto-docente {
+    height: 160px;
+  }
+}
