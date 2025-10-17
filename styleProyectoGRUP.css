@@ -1,15 +1,287 @@
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Espacio entre logo y texto */
-}
-
-.logo {
-    height: 50px; /* Ajusta según tu diseño */
-    width: auto;
-}
-
-.logo-container h1 {
+/*Aplicamos estilos a todo el documento en general*/
+*{
     margin: 0;
-    font-size: 1.8rem;
+    padding: 0;
+    box-sizing: border-box; /*Facilita el modelado de caja*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+  background-color: antiquewhite;
+}
+
+/* --- Cabecera --- */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0bf81;
+  color: #6c5737;
+  padding: 20px 20px;
+}
+
+/* --- Imagen del logotipo --- */
+.cabecera img {
+  width: 100px;     /* ajusta el ancho */
+  height: auto;     /* mantiene la proporción */
+  margin-right: 20px; /* separa el logo del texto */
+  border-radius: 8px; /* opcional: esquinas redondeadas */
+}
+
+/* --- Navegación --- */
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #967b3e;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(61, 49, 33);
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #d8be82;
+}
+
+/* --- Contenido principal --- */
+h2, h3, p {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #dda975;
+  color: rgb(67, 56, 37);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6d07b;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: center;
+  color: #6c5737;;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+/*ESTILO PÁGINA CONTACTO*/
+ /* --- FORMULARIO DE CONTACTO --- */
+.contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e0bf81;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(110, 82, 61, 0.1);
+}
+
+.contacto h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #6c5737;
+  outline: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+
+.formulario-contacto button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #9e883a;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: rgb(85, 73, 32);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*ESTILO PÁGINA NUESTRA FACULTAD*/
+.nuestra-facultad {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e0bf81;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(110, 82, 61, 0.1);
+}
+
+.nuestra-facultad h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.nuestra-facultad p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* --- Estilos para imágenes de facultad --- */
+.imagen-facultad {
+  display: block;
+  width: 100%;           /* Ancho completo del contenedor */
+  max-width: 400px;      /* Ancho máximo */
+  height: 250px;         /* Altura fija */
+  object-fit: cover;     /* Mantiene proporción y recorta si es necesario */
+  margin: 20px auto;     /* Centra la imagen */
+  border-radius: 12px;   /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+/* Efecto hover para las imágenes */
+.imagen-facultad:hover {
+  transform: scale(1.05); /* Aumenta ligeramente al pasar el mouse */
+}
+
+/* Estilos específicos para las columnas */
+.columna-izquierda .imagen-facultad,
+.columna-derecha .imagen-facultad {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+}
+
+/* Versiones de diferentes tamaños */
+.imagen-pequeña {
+  width: 150px;
+  height: 120px;
+}
+
+.imagen-mediana {
+  width: 250px;
+  height: 180px;
+}
+
+.imagen-grande {
+  width: 400px;
+  height: 300px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .imagen-facultad {
+    max-width: 100%;
+    height: 200px;
+  }
+  
+  .columna-izquierda .imagen-facultad,
+  .columna-derecha .imagen-facultad {
+    max-width: 100%;
+    height: 180px;
+  }
+}
+
+/* =====================================================
+   CSS GRID PARA 2 COLUMNAS Y 1 FILA
+   ===================================================== */
+
+/* Título principal */
+.titulo-principal {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo-principal h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* --- CSS Grid para 2 columnas y 1 fila --- */
+.contenido-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* 2 columnas de igual tamaño */
+  grid-template-rows: 1fr;         /* 1 fila */
+  gap: 30px;                       /* Espacio entre columnas */
+  align-items: start;              /* Alinea contenido al inicio */
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+/* Columnas individuales */
+.columna-izquierda,
+.columna-derecha {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === VARIANTES DE GRID CON DIFERENTES PROPORCIONES === */
+.grid-60-40 {
+  grid-template-columns: 60% 40%;  /* Columna izquierda más ancha */
+}
+
+.grid-40-60 {
+  grid-template-columns: 40% 60%;  /* Columna derecha más ancha */
+}
+
+.grid-tercio-dos-tercios {
+  grid-template-columns: 1fr 2fr;  /* Primera columna 1/3, segunda 2/3 */
+}
+
+.grid-dos-tercios-tercio {
+  grid-template-columns: 2fr 1fr;  /* Primera columna 2/3, segunda 1/3 */
+}
+
+/* === RESPONSIVE PARA PANTALLAS PEQUEÑAS === */
+@media (max-width: 768px) {
+  .contenido-dos-columnas {
+    grid-template-columns: 1fr;     /* Una sola columna en móviles */
+    grid-template-rows: auto auto;  /* Dos filas automáticas */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-dos-columnas {
+    padding: 10px;
+    gap: 15px;
+  }
+  
+  .columna-izquierda,
+  .columna-derecha {
+    padding: 15px;
+  }
 }
