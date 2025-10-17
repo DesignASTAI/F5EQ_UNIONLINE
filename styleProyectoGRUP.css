@@ -232,7 +232,7 @@ button:hover {
 /* Título principal */
 .titulo-principal {
   text-align: center;
-  padding: 2em 0 0 0;
+  padding: 3em 0 0 0;
 }
 
 .titulo-principal h1 {
@@ -323,3 +323,29 @@ button:hover {
   padding: 0.8em 0
 }
 
+/*video*/
+
+.container-videos{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los videos se ajusten a la siguiente línea si no caben */
+    justify-content: center; /* Centra los videos horizontalmente */
+    padding: 2em 0em 5em 0;
+}
+
+.clase-video{
+    border-radius: 15px;    /* Bordes redondeados */ /*Tienen que indicarse en .clase-video frame porque el iframe es un elemento hijo*/
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    width: 80%;           /* Ancho fijo para cada video */
+    height: 80%;          /* Altura fija para cada video */
+    display: flex;
+    justify-content: center;
+}
+
+
+.clase-video iframe{
+    width: 80%;
+    height: 80%;
+    border-radius: 15px; /*Para que los bordes redondeados funcionen */
+    aspect-ratio: 16 / 9; /* Mantener proporción 16:9 */
+
+}
