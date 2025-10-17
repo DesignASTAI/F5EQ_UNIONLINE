@@ -1,0 +1,290 @@
+
+contenido de cursos
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Universidad del Caos Creativo | Catálogo de Cursos</title>
+  <style>
+    /* ======= COLORES PRINCIPALES ======= */
+    :root {
+      --dorado: #d6b67a;
+      --marron: #6e5226;
+      --beige: #f3e0c3;
+      --oscuro: #4a3a1b;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: var(--beige);
+      color: var(--oscuro);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--dorado);
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      border-bottom: 8px solid var(--marron);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--oscuro);
+    }
+
+    header p {
+      margin: 0.2rem 0 1rem;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: var(--marron);
+      padding: 0.5rem 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      color: var(--oscuro);
+      margin-bottom: 2rem;
+      border-bottom: 2px solid var(--marron);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    /* ======= ACORDEÓN ======= */
+    .accordion-item {
+      border: 1px solid var(--marron);
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      overflow: hidden;
+      background-color: #fffaf1;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .accordion-header {
+      background-color: var(--dorado);
+      color: var(--oscuro);
+      cursor: pointer;
+      padding: 1rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.1rem;
+      border: none;
+      outline: none;
+      transition: background-color 0.3s;
+    }
+
+    .accordion-header:hover {
+      background-color: var(--marron);
+      color: #fff;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 1rem 1.5rem;
+      background-color: #fffaf1;
+      color: var(--oscuro);
+    }
+
+    .accordion-content h3 {
+      margin-top: 1rem;
+      color: var(--marron);
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--dorado);
+      color: var(--oscuro);
+      border-top: 4px solid var(--marron);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Universidad del Caos Creativo</h1>
+    <p>Especializada en Tecnologías</p>
+    <nav>
+      <ul>
+        <li><a href="#grados">Grados</a></li>
+        <li><a href="#fp">Formación Profesional</a></li>
+        <li><a href="#masters">Másters</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="grados">
+    <h2>🎓 Grados Universitarios</h2>
+    <div class="accordion-item">
+      <button class="accordion-header">💻 Ingeniería Informática</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Duración:</strong> 4 años – 240 ECTS</li>
+          <li><strong>Asignaturas:</strong> Programación, redes, IA, bases de datos, ciberseguridad.</li>
+          <li><strong>Salidas:</strong> Desarrollador/a de software, ingeniero/a de sistemas, analista de datos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">🧠 Tecnologías de la Información</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Duración:</strong> 4 años – 240 ECTS</li>
+          <li><strong>Asignaturas:</strong> Programación, bases de datos, sistemas operativos, redes, IA, seguridad.</li>
+          <li><strong>Salidas:</strong> Administración de sistemas, Big Data, consultoría tecnológica.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">🔐 Ciberseguridad</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Duración:</strong> 4 años – 240 ECTS</li>
+          <li><strong>Asignaturas:</strong> Criptografía, hacking ético, análisis forense, gestión de incidentes.</li>
+          <li><strong>Salidas:</strong> Analista SOC, consultor/a de seguridad, experto/a en ciberinteligencia.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">📡 Ingeniería de Telecomunicaciones</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Duración:</strong> 4 años – 240 ECTS</li>
+          <li><strong>Asignaturas:</strong> Electrónica, redes, tratamiento de señales, telemática.</li>
+          <li><strong>Salidas:</strong> Diseño de redes, desarrollo de hardware, consultoría tecnológica.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="fp">
+    <h2>🧩 Formación Profesional</h2>
+    <div class="accordion-item">
+      <button class="accordion-header">📈 FP Grado Medio en CRM</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Aprendizajes:</strong> Técnicas de venta, atención al cliente, gestión de productos, uso de herramientas CRM.</li>
+          <li><strong>Ventajas:</strong> Alta empleabilidad y formación práctica orientada a entornos digitales.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">🖥️ FP Grado Superior en ASIR</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Competencias:</strong> Seguridad informática, servidores, virtualización, redes, bases de datos.</li>
+          <li><strong>Salidas:</strong> Técnico en sistemas, administrador/a de redes, consultor IT.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">🌍 FP Grado Superior en DAW</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Tecnologías:</strong> HTML, CSS, JavaScript, PHP, SQL, frameworks modernos.</li>
+          <li><strong>Salidas:</strong> Desarrollador/a web full-stack, programador/a móvil, consultor/a tecnológico.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="masters">
+    <h2>🎓 Másters Universitarios</h2>
+    <div class="accordion-item">
+      <button class="accordion-header">🛡️ Máster en Ciberseguridad</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Duración:</strong> 1-2 años</li>
+          <li><strong>Aprendizajes:</strong> Seguridad en redes, análisis forense, gestión de incidentes, criptografía.</li>
+          <li><strong>Salidas:</strong> Analista SOC, hacker ético, consultor/a de seguridad.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">🤖 Máster en Inteligencia Artificial</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Aplicaciones:</strong> Salud, finanzas, educación, entretenimiento.</li>
+          <li><strong>Salidas:</strong> Ingeniero/a de IA, científico/a de datos, consultor/a de automatización.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">📊 Máster en Big Data</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Herramientas:</strong> Python, R, Hadoop, Spark, SQL, Tableau.</li>
+          <li><strong>Salidas:</strong> Data Analyst, Data Scientist, ingeniero/a de datos.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-header">📈 Máster en Marketing Digital</button>
+      <div class="accordion-content">
+        <ul>
+          <li><strong>Temas:</strong> SEO, SEM, redes sociales, analítica web, e-commerce.</li>
+          <li><strong>Salidas:</strong> Especialista en marketing digital, analista web, growth hacker.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Universidad del Caos Creativo. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Script para acordeón interactivo
+    const accordions = document.querySelectorAll('.accordion-header');
+    accordions.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
