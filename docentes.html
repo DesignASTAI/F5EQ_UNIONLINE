@@ -1,90 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style-docentes.css">
-</head>    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docentes</title>
+  <link rel="stylesheet" href="style-docentes.css" />
+</head>
 <body>
-    <h1>Docentes</h1>
-    <div class="contenedor-docentes">
-        <figure class="docente">
-            <figcaption>
-                <img src="/assets/Dr. Laura Méndez Ruiz.png" alt="Laura Mendez Ruiz" class="elemento-slider">
-                <p>Dr. Laura Méndez Ruiz</p>
-                <p>Formación: Doctorado en Inteligencia Artificial – Universidad Politécnica de Cataluña</p>
-                <p>Asignaturas: Aprendizaje Automático, Ética en IA</p>
-                <p>Biografía: Investigadora apasionada por el desarrollo de algoritmos éticos y transparentes. Ha trabajado en proyectos europeos sobre IA aplicada a la salud.</p>
-            </figcaption>
-            <figcaption>
-                <img src="/assets/Mtro. Andrés Torres Gil.png" alt="Mtro. Andrés Torres Gil" class="elemento-slider">
-                <p>Mtro. Andrés Torres Gil</p>
-                <p>Formación: Maestría en Ingeniería de Software – Universidad de Zaragoza</p>
-                <p>Asignaturas: Arquitectura de Software, DevOps</p>
-                <p>Biografía: Ex-desarrollador en startups tecnológicas, combina experiencia práctica con docencia. Promotor del desarrollo ágil y la automatización.</p>
-            </figcaption>    
-                <img src="/assets/Dra. Camila Soto Varela.png" alt="Dra. Camila Soto Varela" class="elemento-slider">
-                <p>Dra. Camila Soto Varela</p>
-                <p>Formación: Doctorado en Bioinformática – Universidad de Granada</p>
-                <p>Asignaturas: Programación Científica, Análisis de Datos Genómicos</p>
-                <p>Biografía: Ha colaborado con centros de investigación biomédica en España y Alemania. Su enfoque combina biología computacional y big data.</p>
-            <figcaption>   
-                <img src="/assets/Prof. Javier Peña Lobo.png" alt="Prof. Javier Peña Lobo" class="elemento-slider">
-                <p>Prof. Javier Peña Lobo</p>
-                <p>Formación: Licenciatura en Ciencia de Datos – Universidad de Salamanca</p>
-                <p>Asignaturas: Estadística Aplicada, Visualización de Datos</p>
-                <p>Biografía: Especialista en análisis predictivo y minería de datos. Ha asesorado a empresas del sector financiero en modelos de riesgo.</p>
-            </figcaption>
-            <figcaption>  
-                <img src="/assets/Dra. Mariana Ríos León.png" alt="Dra. Mariana Ríos León" class="elemento-slider">
-                <p>Dra. Mariana Ríos León</p>
-                <p>Formación: Doctorado en Psicología Cognitiva y Tecnología Educativa – Universidad de Barcelona</p>
-                <p>Asignaturas: Interacción Humano-Computadora, Diseño de Experiencias de Aprendizaje</p>
-                <p>Biografía: Investiga cómo la tecnología puede mejorar los procesos de aprendizaje. Ha desarrollado plataformas educativas gamificadas.</p>
-            </figcaption>  
-            <figcaption>    
-                <img src="/assets/Mtro. Tomás Herrera Díaz.png" alt="Mtro. Tomás Herrera Día" class="elemento-slider">
-                <p>Mtro. Tomás Herrera Día</p>
-                <p>Formación: Maestría en Ciberseguridad – Universidad de Deusto</p>
-                <p>Asignaturas: Seguridad en Redes, Criptografía</p>
-                <p>Biografía: Consultor en seguridad informática con experiencia en auditorías de sistemas críticos. Promueve la concienciación digital entre estudiantes.</p>
-            </figcaption>
-            <figcaption>   
-                <img src="/assets/Mtro. Tomás Herrera Díaz.png" alt="Mtro. Tomás Herrera Día" class="elemento-slider">
-                <p>Mtro. Tomás Herrera Día</p>
-                <p>Formación: Maestría en Ciberseguridad – Universidad de Deusto</p>
-                <p>Asignaturas: UX/UI, Diseño Centrado en el Usuario</p>
-                <p>Biografía: Diseñadora digital con experiencia en apps móviles y plataformas web. Ha trabajado en proyectos de accesibilidad tecnológica.</p>
-            </figcaption>
-            <figcaption> 
-                <img src="/assets/Dr. Sergio Navarro Cruz.png" alt="Dr. Sergio Navarro Cruz" class="elemento-slider">
-                <p>Dr. Sergio Navarro Cruz</p>
-                <p>Formación: Doctorado en Ingeniería Electrónica y Telecomunicaciones – Universidad Carlos III de Madrid</p>
-                <p>Asignaturas: Sistemas Embebidos, Redes de Comunicaciones</p>
-                <p>Biografía: Ha liderado proyectos de IoT en colaboración con empresas de telecomunicaciones. Apasionado por la robótica educativa.</p>
-            </figcaption>
-            <figcaption>   
-                <img src="/assets/Mtra. Paula Ibáñez Soto.png" alt="Mtra. Paula Ibáñez Soto" class="elemento-slider">
-                <p>Mtra. Paula Ibáñez Soto</p>
-                <p>Formación: Maestría en Derecho Digital – Universidad Autónoma de Madrid</p>
-                <p>Asignaturas: Legislación Tecnológica, Protección de Datos</p>
-                <p>Biografía: Abogada especializada en tecnología y privacidad. Participa en foros internacionales sobre regulación de IA.</p>
-            </figcaption>
-            <figcaption> 
-                <img src="/assets/Prof. Hugo Martínez Rey.png" alt="Prof. Hugo Martínez Rey" class="elemento-slider">
-                <p>Prof. Hugo Martínez Rey</p>
-                <p>Formación: Licenciatura en Matemática Aplicada y Computación – Universidad de Oviedo</p>
-                <p>Asignaturas: Álgebra Computacional, Optimización Numérica</p>
-                <p>Biografía: Matemático con vocación docente. Ha desarrollado modelos matemáticos para simulaciones industriales.</p>
-            </figcaption>   
+  <h1>Docentes</h1>
+  <div class="contenedor-docentes">
+
+    <figure class="docente">
+      <img src="/assets/Dr. Laura Méndez Ruiz.png" alt="Laura Méndez Ruiz" class="foto-docente" />
+      <figcaption>
+        <p><strong>Dr. Laura Méndez Ruiz</strong></p>
+        <p>Formación: Doctorado en Inteligencia Artificial – Universidad Politécnica de Cataluña</p>
+        <p>Asignaturas: Aprendizaje Automático, Ética en IA</p>
+        <p>Biografía: Investigadora apasionada por el desarrollo de algoritmos éticos y transparentes. Ha trabajado en proyectos europeos sobre IA aplicada a la salud.</p>
+      </figcaption>
     </figure>
-    </div>
-<div class="boton-volver">
-        <button onclick="window.history.back()">Volver</button>
-    </div>
-    <footer class="footer">
+
+    <figure class="docente">
+      <img src="/assets/Mtro. Andrés Torres Gil.png" alt="Mtro. Andrés Torres Gil" class="foto-docente" />
+      <figcaption>
+        <p><strong>Mtro. Andrés Torres Gil</strong></p>
+        <p>Formación: Maestría en Ingeniería de Software – Universidad de Zaragoza</p>
+        <p>Asignaturas: Arquitectura de Software, DevOps</p>
+        <p>Biografía: Ex-desarrollador en startups tecnológicas, combina experiencia práctica con docencia. Promotor del desarrollo ágil y la automatización.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="docente">
+      <img src="/assets/Dra. Camila Soto Varela.png" alt="Dra. Camila Soto Varela" class="foto-docente" />
+      <figcaption>
+        <p><strong>Dra. Camila Soto Varela</strong></p>
+        <p>Formación: Doctorado en Bioinformática – Universidad de Granada</p>
+        <p>Asignaturas: Programación Científica, Análisis de Datos Genómicos</p>
+        <p>Biografía: Ha colaborado con centros de investigación biomédica en España y Alemania. Su enfoque combina biología computacional y big data.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="docente">
+      <img src="/assets/Prof. Javier Peña Lobo.png" alt="Prof. Javier Peña Lobo" class="foto-docente" />
+      <figcaption>
+        <p><strong>Prof. Javier Peña Lobo</strong></p>
+        <p>Formación: Licenciatura en Ciencia de Datos – Universidad de Salamanca</p>
+        <p>Asignaturas: Estadística Aplicada, Visualización de Datos</p>
+        <p>Biografía: Especialista en análisis predictivo y minería de datos. Ha asesorado a empresas del sector financiero en modelos de riesgo.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="docente">
+      <img src="/assets/Dra. Mariana Ríos León.png" alt="Dra. Mariana Ríos León" class="foto-docente" />
+      <figcaption>
+        <p><strong>Dra. Mariana Ríos León</strong></p>
+        <p>Formación: Doctorado en Psicología Cognitiva y Tecnología Educativa – Universidad de Barcelona</p>
+        <p>Asignaturas: Interacción Humano-Computadora, Diseño de Experiencias de Aprendizaje</p>
+        <p>Biografía: Investiga cómo la tecnología puede mejorar los procesos de aprendizaje. Ha desarrollado plataformas educativas gamificadas.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="docente">
+      <img src="/assets/Mtro. Tomás Herrera Díaz.png" alt="Mtro. Tomás Herrera Díaz" class="foto-docente" />
+      <figcaption>
+        <p><strong>Mtro. Tomás Herrera Díaz</strong></p>
+        <p>Formación: Maestría en Ciberseguridad – Universidad de Deusto</p>
+        <p>Asignaturas: Seguridad en Redes, Criptografía</p>
+        <p>Biografía: Consultor en seguridad informática con experiencia en auditorías de sistemas críticos. Promueve la concienciación digital entre estudiantes.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="docente">
+      <img src="/assets/Dr. Sergio Navarro Cruz.png" alt="Dr. Sergio Navarro Cruz" class="foto-docente" />
+      <figcaption>
+        <p><strong>Dr. Sergio Navarro Cruz</strong></p>
+        <p>Formación: Doctorado en Ingeniería Electrónica y Telecomunicaciones – Universidad Carlos III de Madrid</p>
+        <p>Asignaturas: Sistemas Embebidos, Redes de Comunicaciones</p>
+        <p>Biografía: Ha liderado proyectos de IoT en colaboración con empresas de telecomunicaciones. Apasionado por la robótica educativa.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="docente">
+      <img src="/assets/Mtra. Paula Ibáñez Soto.png" alt="Mtra. Paula Ibáñez Soto" class="foto-docente" />
+      <figcaption>
+        <p><strong>Mtra. Paula Ibáñez Soto</strong></p>
+        <p>Formación: Maestría en Derecho Digital – Universidad Autónoma de Madrid</p>
+        <p>Asignaturas: Legislación Tecnológica, Protección de Datos</p>
+        <p>Biografía: Abogada especializada en tecnología y privacidad. Participa en foros internacionales sobre regulación de IA.</p>
+      </figcaption>
+    </figure>
+
+  </div>
+
+  <div class="boton-volver">
+    <button onclick="window.history.back()">Volver</button>
+  </div>
+
+  <footer class="footer">
     <p>&copy; 2025 | Universidad Online del Caos Creativo. Todos los derechos reservados.</p>
-  </footer>    
+  </footer>
 </body>
 </html>
