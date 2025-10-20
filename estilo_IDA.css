@@ -1,0 +1,62 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #E8DED1;
+  color: #4A3623;
+  margin: 0;
+  padding: 40px;
+}
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #F1E8DA;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+.card h2 {
+  color: #4D341D;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #5C4632;
+  margin-bottom: 20px;
+}
+.details {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.details li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+button {
+  background-color: #F8F3EC;
+  border: 1px solid #E2D7C7;
+  color: #4A3623;
+  border-radius: 6px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: #FAEBD7;
+}
