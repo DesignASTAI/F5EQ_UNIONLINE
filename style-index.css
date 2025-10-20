@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+/* --- Cabecera --- */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0bf81;
+  color: #6c5737;
+  padding: 10px 20px;
+}
+
+/* --- Imagen del logotipo --- */
+.cabecera img {
+  width: 100px;     /* ajusta el ancho */
+  height: auto;     /* mantiene la proporción */
+  margin-right: 20px; /* separa el logo del texto */
+  border-radius: 8px; /* opcional: esquinas redondeadas */
+}
+
+/* --- Navegación --- */
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #967b3e;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(61, 49, 33);
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #d8be82;
+}
+
+/* --- Contenido principal --- */
+h2, h3, p {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #dda975;
+  color: rgb(67, 56, 37);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6d07b;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: center;
+  color: #6c5737;;
+  padding: 10px 0;
+  margin-top: 40px;
+}
