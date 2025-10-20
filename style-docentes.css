@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #faebd7;
+  color: #433825;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #433825;
+}
+
+/* Contenedor general */
+.contenedor-docentes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Cada docente */
+.docente {
+  background-color: #e0bf81;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #433825;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.docente:hover {
+  transform: translateY(-5px);
+}
+
+/* Foto del docente */
+.foto-docente {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Información del docente */
+figcaption {
+  padding: 15px;
+}
+
+figcaption p {
+  margin-bottom: 10px;
+}
+
+figcaption p:first-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #433825;
+}
+
+/* Botón volver */
+.boton-volver {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.boton-volver button {
+  background-color: #dda975;
+  color: #433825;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver button:hover {
+  background-color: #e6d07b;;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #dda975
+  color:#433825;
+  border-radius: 10px;
+  margin-top: 40px;
+}
