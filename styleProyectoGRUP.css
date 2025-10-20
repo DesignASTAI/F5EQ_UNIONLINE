@@ -1,0 +1,356 @@
+/*Aplicamos estilos a todo el documento en general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Facilita el modelado de caja*/
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {
+  background-color: antiquewhite;
+}
+
+/* --- Cabecera --- */
+.cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0bf81;
+  color: #6c5737;
+  padding: 20px 20px;
+}
+
+/* --- Imagen del logotipo --- */
+.cabecera img {
+  width: 100px;     /* ajusta el ancho */
+  height: auto;     /* mantiene la proporción */
+  margin-right: 20px; /* separa el logo del texto */
+  border-radius: 8px; /* opcional: esquinas redondeadas */
+}
+
+/* --- Navegación --- */
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #967b3e;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.nav-bar li {
+  margin: 0 15px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(61, 49, 33);
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #d8be82;
+}
+
+/* --- Contenido principal --- */
+h2, h3, p {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  background-color: #dda975;
+  color: rgb(67, 56, 37);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e6d07b;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: center;
+  color: #6c5737;;
+  padding: 10px 0;
+  margin-top: 40px;
+}
+
+/*ESTILO PÁGINA CONTACTO*/
+ /* --- FORMULARIO DE CONTACTO --- */
+.contacto {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #e0bf81;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(110, 82, 61, 0.1);
+}
+
+.contacto h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario-contacto label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-bottom: 2px solid #6c5737;
+  outline: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+
+.formulario-contacto button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #9e883a;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: rgb(85, 73, 32);
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*ESTILO PÁGINA NUESTRA FACULTAD*/
+.class-facultad {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.class-facultad p, h3{ /* Párrafos y subtítulos */
+  text-align: center;
+  background-color: white;
+  padding: 10px
+}
+
+.titulo-principal { /* Título principal */  
+  text-align: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.nuestra-facultad { /* Contenedor principal */
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(110, 82, 61, 0.1);
+}
+
+
+/* --- Estilos para imágenes de facultad --- */
+.imagen-facultad {
+  display: block;
+  width: 100%;           /* Ancho completo del contenedor */
+  max-width: 400px;      /* Ancho máximo */
+  height: 250px;         /* Altura fija */
+  object-fit: cover;     /* Mantiene proporción y recorta si es necesario */
+  margin: 20px auto;     /* Centra la imagen */
+  border-radius: 12px;   /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: transform 0.3s ease; /* Animación suave */
+}
+
+
+
+
+/* Efecto hover para las imágenes */
+.imagen-facultad:hover {
+  transform: scale(1.05); /* Aumenta ligeramente al pasar el mouse */
+  rotate: 350deg;
+}
+
+/* Estilos específicos para las columnas */
+.columna-izda .imagen-facultad,
+.columna-medio .imagen-facultad,
+.columna-dcha .imagen-facultad {
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  flex: 1; /* mismo tamaño de las columnas */
+  object-fit: cover; /* mantiene proporción de la imagen */
+}   
+
+/* Versiones de diferentes tamaños */
+.imagen-pequeña {
+  width: 150px;
+  height: 120px;
+}
+
+.imagen-mediana {
+  width: 250px;
+  height: 180px;
+}
+
+.imagen-grande {
+  width: 400px;
+  height: 300px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .imagen-facultad {
+    max-width: 100%;
+    height: 200px;
+  }
+  
+  .columna-izquierda .imagen-facultad,
+  .columna-derecha .imagen-facultad {
+    max-width: 100%;
+    height: 180px;
+  }
+}
+
+/* =====================================================
+   CSS GRID PARA 3 COLUMNAS Y 1 FILA
+   ===================================================== */
+
+/* Título principal */
+.titulo-principal {
+  text-align: center;
+  padding: 3em 0 0 0;
+}
+
+.titulo-principal h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* --- CSS Grid para 2 columnas y 1 fila --- */
+.contenido-3-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  /* 2 columnas de igual tamaño */
+  grid-template-rows: 1fr;         /* 1 fila */
+  gap: 30px;                       /* Espacio entre columnas */
+  align-items: start;              /* Alinea contenido al inicio */
+  margin-bottom: 40px;
+  padding: 20px;
+  /*border: 2px solid #967b3e;*/
+}
+
+.contenido-3-columnas img {
+  border-radius: 50em;
+  max-height:25em;
+}
+
+/* Columnas individuales */
+.columna-izda, .columna-medio, .columna-dcha {
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(83, 45, 45, 0.9);
+  display: flex;  
+  flex-direction: column;
+    flex: 1; /* mismo tamaño de las columnas del contenedor */
+    max-height: auto; /* altura máxima uniforme */
+    overflow: hidden; /* oculta el desbordamiento */
+    min-height:45em;
+}
+
+/* === VARIANTES DE GRID CON DIFERENTES PROPORCIONES === */
+.grid-50-50 {
+  grid-template-columns: 50% 50%;  /* Columnas de igual ancho */
+}
+
+.grid-tercio-tercio-tercio {
+  grid-template-columns: 1fr 1fr 1fr;  /* Tres columnas de igual ancho */
+}
+
+
+.class-facultad {
+  background-color: antiquewhite;
+  padding: 0px;
+}
+
+.contenido-2-columnas {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;  /* 2 columnas de igual tamaño */
+  grid-template-rows: 1fr;         /* 1 fila */
+  gap: 30px;                       /* Espacio entre columnas */
+  align-items: start;              /* Alinea contenido al inicio */
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color:#967b3e;
+}
+
+.columna-A {
+  padding: 20px;
+  background-color: none;
+}
+
+.columna-A iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  background-color: #967b3e;
+  /* Imagen de respaldo si el iframe no carga */
+  background-image: url('Images/Scena2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.columna-B {
+  padding: 8em 0 2em 2em;
+}
+
+.columna-B h2{
+  background-color: #967b3e;
+}
+
+.columna-B ul>li {
+  padding: 0.8em 0
+}
+
+/*video*/
+
+.container-videos{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los videos se ajusten a la siguiente línea si no caben */
+    justify-content: center; /* Centra los videos horizontalmente */
+    padding: 2em 0em 5em 0;
+}
+
+.clase-video{
+    border-radius: 15px;    /* Bordes redondeados */ /*Tienen que indicarse en .clase-video frame porque el iframe es un elemento hijo*/
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    width: 80%;           /* Ancho fijo para cada video */
+    height: 80%;          /* Altura fija para cada video */
+    display: flex;
+    justify-content: center;
+}
+
+
+.clase-video iframe{
+    width: 80%;
+    height: 80%;
+    border-radius: 15px; /*Para que los bordes redondeados funcionen */
+    aspect-ratio: 16 / 9; /* Mantener proporción 16:9 */
+
+}
